@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="7dp"
+    android:orientation="vertical" android:layout_width="match_parent" android:background="@drawable/orange"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent" android:orientation="vertical" android:background="@null"
+            android:layout_height="fill_parent">
+
+
+            <ImageView
+                android:layout_width="80dp" android:src="@drawable/dp"
+                android:layout_height="80dp" android:layout_marginLeft="12dp"
+                android:id="@+id/imageButton" android:layout_marginTop="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" "
+                android:id="@+id/name_home"
+                android:elegantTextHeight="true"
+                android:autoText="false"
+                android:textColor="#000000" android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:textStyle="normal|bold|italic"
+                android:typeface="serif"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=" " android:textSize="15dp"
+                android:id="@+id/username_home"
+                android:layout_below="@+id/name_home"
+                android:layout_alignLeft="@+id/name_home"
+                android:layout_alignStart="@+id/name_home" />
+            <View
+                android:layout_width="match_parent" android:paddingTop="25dp" android:id="@+id/view1"
+                android:layout_height="0.5dp" android:background="#ffffff" android:layout_marginTop="100dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About me" android:textStyle="bold|italic" android:textColor="#ffffff"
+                android:id="@+id/about_me_heading" android:gravity="center"
+                android:layout_gravity="center" android:textSize="20dp"
+                android:layout_alignTop="@+id/view1"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="wrap_content" android:id="@+id/view2"
+                android:layout_marginTop="10dp"
+                android:layout_height="0.5dp" android:background="#ffffff"
+                android:layout_below="@+id/about_me_heading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:padding="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Here is the content entered by the user "
+                android:textColor="#a11401"
+                android:id="@+id/about_me_content" android:background="#ffe2f1"
+                android:layout_marginTop="36dp"
+                android:layout_below="@+id/view2"
+                android:layout_centerHorizontal="true" />
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_alignBottom="@+id/about_me_content" android:layout_marginTop="100dp"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW MY UPLOADS" android:layout_weight="1"
+                android:id="@+id/view_my_uploads"
+                android:textColor="#ffffff" android:textStyle="bold"
+                android:background="@drawable/button_border"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/username_home"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clickable="true"
+    android:layout_width="match_parent"  android:id="@+id/zzz_follower" android:gravity="center_vertical"
+    android:layout_height="85dp" android:layout_gravity="top" android:background="#ffeae5"
+
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/dp_in_followers" android:src="@drawable/abc"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content" android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Prakhar" android:textSize="20dp" android:textStyle="bold"
+        android:id="@+id/name_in_followers"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/dp_in_followers"
+        android:layout_toEndOf="@+id/dp_in_followers"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+
+    <Button
+        android:layout_width="wrap_content" android:text="Remove" android:background="@drawable/button_border" android:textColor="#ffffff"
+        android:layout_height="wrap_content" android:layout_marginTop="15dp"
+        android:layout_alignTop="@+id/dp_in_followers" android:clickable="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/remove_btn" />
+
+
+</RelativeLayout>

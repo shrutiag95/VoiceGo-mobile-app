@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/orange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textSize="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recovery options"
+        android:id="@+id/TV_recover" android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select one"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/TV_recover"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="200dp" android:src="@drawable/phn"
+            android:layout_height="200dp"  android:clickable="true" android:onClick="Via_phone"
+            android:id="@+id/imageView8"
+            android:layout_alignTop="@+id/imageView10"
+            android:layout_toLeftOf="@+id/imageView10"
+            android:layout_toStartOf="@+id/imageView10"
+            android:layout_marginRight="36dp"
+            android:layout_marginEnd="36dp" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:src="@drawable/msg"  android:clickable="true" android:onClick="Via_email"
+            android:layout_height="180dp"
+            android:id="@+id/imageView10" android:paddingRight="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="69dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Via Phone sms" android:clickable="true" android:onClick="Via_phone"
+            android:id="@+id/textView5" android:textColor="#9f3a00"
+            android:layout_below="@+id/imageView10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Via Email" android:textColor="#9f3a00"
+            android:id="@+id/textView6" android:clickable="true" android:onClick="Via_email"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_below="@+id/imageView10"
+            android:layout_alignLeft="@+id/imageView10"
+            android:layout_alignStart="@+id/imageView10" />
+
+    </RelativeLayout>
+</RelativeLayout>
